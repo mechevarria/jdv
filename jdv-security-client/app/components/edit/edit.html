@@ -1,0 +1,19 @@
+<div class="card-pf card-pf-accented">
+    <div class="card-pf-body">
+        <form class="form-inline">
+            <div class="form-group container-fluid">
+                <select class="form-control"
+                        ng-model="$ctrl.selectedUser"
+                        ng-options="user as user for user in $ctrl.users">
+                </select>
+                <button type="button" class="btn btn-primary" ng-click="$ctrl.load()">Load</button>
+            </div>
+        </form>
+        <br>
+        <pf-table-view items="$ctrl.items"
+                       columns="$ctrl.columns"
+                       config="$ctrl.config"
+                       dt-options="$ctrl.dtOptions">
+        </pf-table-view>
+    </div>
+</div>
