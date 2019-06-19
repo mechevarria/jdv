@@ -1,0 +1,8 @@
+connect
+module add \
+    --name=com.oracle \
+    --resources=ojdbc6.jar \
+    --dependencies=javax.api,javax.transaction.api
+/subsystem=datasources/jdbc-driver=oracle:add(driver-name="oracle",driver-module-name="com.oracle")
+/:reload
+\q

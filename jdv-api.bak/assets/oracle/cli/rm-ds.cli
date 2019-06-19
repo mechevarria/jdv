@@ -1,0 +1,5 @@
+connect
+data-source disable --name=oracle_ds
+data-source remove --name=oracle_ds
+/:reload
+\q

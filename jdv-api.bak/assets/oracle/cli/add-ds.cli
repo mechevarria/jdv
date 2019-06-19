@@ -1,0 +1,10 @@
+connect
+data-source add \
+  --name=oracle_ds \
+  --jndi-name=java:/oracle_ds \
+  --connection-url=jdbc:oracle:thin:@oracle-vm:1521:xe \
+  --driver-name=oracle \
+  --user-name=oracle \
+  --password=oracle
+data-source enable --name=oracle_ds
+\q

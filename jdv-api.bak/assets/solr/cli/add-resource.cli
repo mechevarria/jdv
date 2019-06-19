@@ -1,0 +1,6 @@
+connect
+/subsystem=resource-adapters/resource-adapter=solr/connection-definitions=solr:add(jndi-name=java:/solr, class-name=org.teiid.resource.adapter.solr.SolrManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=solr/connection-definitions=solr/config-properties=url:add(value=http://rhel-vm:8983/solr/)
+/subsystem=resource-adapters/resource-adapter=solr/connection-definitions=solr/config-properties=CoreName:add(value=states)
+/subsystem=resource-adapters/resource-adapter=solr:activate
+\q

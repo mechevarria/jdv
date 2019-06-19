@@ -1,0 +1,13 @@
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Zion National Park', 'Utah', 5);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Yosemite National Park', 'California', 8);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Arlington National Cemetery', 'Virginia', 10);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Badlands National Park', 'South Dakota', 4);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Cape Hatteras National Seashore', 'North Carolina', 3);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Fort Pulaski National Monument', 'Georgia', 1);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Hawaii Volcanoes National Park', 'Hawaii', 6);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Boston National Historical Park', 'Massachusetts', 2);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('San Juan National Historic Site', 'Puerto Rico', 10);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Saratoga National Historical Park', 'New York', 7);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Oregon Caves National Monument', 'Oregon', 4);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Oklahoma City National Memorial', 'Oklahoma', 6);
+INSERT INTO public.us_parks (name, state, rating) VALUES ('Big Bend National Park', 'Texas', 1);

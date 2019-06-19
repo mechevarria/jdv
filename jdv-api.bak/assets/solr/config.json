@@ -1,0 +1,6 @@
+{
+  "host" : "rhel-vm",
+  "port" : "8983",
+  "core": "states",
+  "file" : "states.json"
+}

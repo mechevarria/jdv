@@ -1,0 +1,13 @@
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Zion National Park', 'Utah', 5);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Yosemite National Park', 'California', 8);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Arlington National Cemetery', 'Virginia', 10);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Badlands National Park', 'South Dakota', 4);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Cape Hatteras National Seashore', 'North Carolina', 3);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Fort Pulaski National Monument', 'Georgia', 1);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Hawaii Volcanoes National Park', 'Hawaii', 6);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Boston National Historical Park', 'Massachusetts', 2);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'San Juan National Historic Site', 'Puerto Rico', 10);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Saratoga National Historical Park', 'New York', 7);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Oregon Caves National Monument', 'Oregon', 4);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Oklahoma City National Memorial', 'Oklahoma', 6);
+INSERT INTO us_parks (id, name, state, rating) VALUES (park_seq.nextval, 'Big Bend National Park', 'Texas', 1);

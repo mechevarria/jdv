@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <Placemarks>
+      <Placemark>
+        <name>Yosemite National Park</name>
+        <description>Yosemite National Park is in California’s Sierra Nevada mountains. It’s famed for its giant, ancient sequoia trees, and for Tunnel View, the iconic vista of towering Bridalveil Fall and the granite cliffs of El Capitan and Half Dome.</description>
+        <Point>
+          <coordinates>37.865101,-119.538330,0</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Zion National Park</name>
+        <description>Zion National Park is located in the Southwestern United States, near Springdale, Utah. A prominent feature of the 229-square-mile (590 km2) park is Zion Canyon, which is 15 miles (24 km) long and up to half a mile (800 m) deep, cut through the reddish and tan-colored Navajo Sandstone by the North Fork of the Virgin River.</description>
+        <Point>
+          <coordinates>37.317207,-113.022537,0</coordinates>
+        </Point>
+      </Placemark>
+     <Placemark>
+        <name>Arlington National Cemetery</name>
+        <description>Arlington National Cemetery is a United States military cemetery in Arlington County, Virginia, across the Potomac River from Washington, D.C., in whose 624 acres (253 ha) the dead of the nation's conflicts have been buried, beginning with the American Civil War, as well as reinterred dead from earlier wars. The United States Department of the Army, a component of the United States Department of Defense, controls the cemetery.</description>
+        <Point>
+          <coordinates>38.87657,-77.07122,0</coordinates>
+        </Point>
+      </Placemark>
+     <Placemark>
+        <name>Badlands National Park</name>
+        <description>Badlands National Park (Lakota: Makȟóšiča[3]) is a national park in southwestern South Dakota that protects 242,756 acres (379.306 sq mi; 98,240 ha)[1] of sharply eroded buttes, pinnacles, and spires blended with the largest undisturbed mixed grass prairie in the United States. The park is managed by the National Park Service..</description>
+        <Point>
+          <coordinates>43.6504,-102.43392,0</coordinates>
+        </Point>
+      </Placemark>
+     <Placemark>
+        <name>Cape Hatteras National Seashore</name>
+        <description>Cape Hatteras National Seashore is a United States national seashore which preserves the portion of the Outer Banks of North Carolina from Bodie Island to Ocracoke Island, stretching over 70 miles (110 km), and is managed by the National Park Service.</description>
+        <Point>
+          <coordinates>35.30361,-75.51123,0</coordinates>
+        </Point>
+      </Placemark>
+     <Placemark>
+        <name>Fort Pulaski National Monument</name>
+        <description>Fort Pulaski National Monument is located on Cockspur Island between Savannah and Tybee Island, Georgia. It preserves Fort Pulaski, where in 1862 during the American Civil War, the Union Army successfully tested rifled cannon in combat, the success of which rendered brick fortifications obsolete.</description>
+        <Point>
+          <coordinates>32.02722,-80.89008,0</coordinates>
+        </Point>
+      </Placemark>
+     <Placemark>
+        <name>Hawaii Volcanoes National Park</name>
+        <description>Hawaii Volcanoes National Park, established in 1916, is a United States National Park located in the U.S. State of Hawaii on the island of Hawaii. It encompasses two active volcanoes: Kīlauea, one of the world's most active volcanoes, and Mauna Loa, the world's most massive shield volcano.</description>
+        <Point>
+          <coordinates>19.39999,-155.29962,0</coordinates>
+        </Point>
+      </Placemark>
+    </Placemarks>
+  </Document>
+</kml>

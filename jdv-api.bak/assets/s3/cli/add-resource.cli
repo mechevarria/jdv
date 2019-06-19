@@ -1,0 +1,5 @@
+connect
+/subsystem=resource-adapters/resource-adapter=webservice/connection-definitions=s3:add(jndi-name=java:/s3, class-name=org.teiid.resource.adapter.ws.WSManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=webservice/connection-definitions=s3/config-properties=EndPoint:add(value=https:/s3.amazonaws.com/mechevarria-files/org.csv)
+/subsystem=resource-adapters/resource-adapter=webservice:activate
+\q

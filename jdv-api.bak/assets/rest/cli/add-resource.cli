@@ -1,0 +1,6 @@
+connect
+/subsystem=resource-adapters/resource-adapter=webservice/connection-definitions=rest:add(jndi-name=java:/rest, class-name=org.teiid.resource.adapter.ws.WSManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=webservice/connection-definitions=rest/config-properties=SecurityType:add(value=None)
+/subsystem=resource-adapters/resource-adapter=webservice/connection-definitions=rest/config-properties=EndPoint:add(value=https://jsonplaceholder.typicode.com/posts)
+/subsystem=resource-adapters/resource-adapter=webservice:activate
+\q

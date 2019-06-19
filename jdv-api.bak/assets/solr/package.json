@@ -1,0 +1,9 @@
+{
+  "name": "solr-loader",
+  "version": "0.1.0",
+  "description": "Loads state data in solr instance",
+  "author": "Mike Echevarria",
+  "dependencies": {
+    "solr-node": "1.0.13"
+  }
+}

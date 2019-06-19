@@ -1,0 +1,6 @@
+connect
+/subsystem=resource-adapters/resource-adapter=mongodb/connection-definitions=mongo:add(jndi-name=java:/mongo, class-name=org.teiid.resource.adapter.mongodb.MongoDBManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=mongodb/connection-definitions=mongo/config-properties=RemoteServerList:add(value=rhel-vm:27017)
+/subsystem=resource-adapters/resource-adapter=mongodb/connection-definitions=mongo/config-properties=Database:add(value=test)
+/subsystem=resource-adapters/resource-adapter=mongodb:activate
+\q

@@ -1,0 +1,5 @@
+connect
+/subsystem=resource-adapters/resource-adapter=file/connection-definitions=kml:add(jndi-name=java:/kml, class-name=org.teiid.resource.adapter.file.FileManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=file/connection-definitions=kml/config-properties=ParentDirectory:add(value=/home/mechevar/git/jdv-api/assets/kml/)
+/subsystem=resource-adapters/resource-adapter=file:activate
+\q

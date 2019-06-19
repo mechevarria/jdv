@@ -1,0 +1,4 @@
+connect
+/subsystem=datasources/jdbc-driver=oracle:remove
+module remove --name=com.oracle
+\q

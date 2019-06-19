@@ -1,0 +1,5 @@
+{
+  "url" : "mongodb://rhel-vm:27017/test",
+  "collection" : "features",
+  "file" : "gz_2010_us_040_00_20m.json"
+}

@@ -1,0 +1,5 @@
+connect
+data-source disable --name=pg
+data-source remove --name=pg
+/:reload
+\q

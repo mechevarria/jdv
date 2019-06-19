@@ -1,0 +1,10 @@
+connect
+data-source add \
+    --name=pg \
+    --jndi-name=java:/postgresql \
+    --connection-url=jdbc:postgresql://rhel-vm:5432/jboss \
+    --driver-name=postgresql \
+    --user-name=jboss \
+    --password=jboss
+data-source enable --name=pg
+\q
