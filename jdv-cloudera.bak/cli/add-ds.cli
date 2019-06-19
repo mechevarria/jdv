@@ -1,0 +1,4 @@
+connect
+data-source add --name=ImpalaDS --jndi-name=java:/ImpalaDS --connection-url=jdbc:impala://cloudera-vm:21050 --driver-name=impala --user-name=cloudera --password=cloudera
+data-source enable --name=ImpalaDS
+\q

@@ -1,0 +1,4 @@
+connect
+data-source disable --name=ImpalaDS
+data-source remove --name=ImpalaDS
+\q

@@ -1,0 +1,79 @@
+{
+	"variables": [],
+	"info": {
+		"name": "excel",
+		"_postman_id": "a2fb59e3-712f-38d3-1cac-9cfca1a038ac",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Edit teiid",
+			"request": {
+				"url": "{{host}}/odata4/excel/ExcelViewEdit/Sheet1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dGVpaWRVc2VyOlJlZGhhdDEh",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View teiid",
+			"request": {
+				"url": "{{host}}/odata4/excel/ExcelView/Sheet1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic dGVpaWRVc2VyOlJlZGhhdDEh",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View power",
+			"request": {
+				"url": "{{host}}/odata4/excel/ExcelView/Sheet1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic cG93ZXJVc2VyOlJlZGhhdDEh",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View admin",
+			"request": {
+				"url": "{{host}}/odata4/excel/ExcelView/Sheet1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Basic YWRtaW5Vc2VyOlJlZGhhdDEh",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,6 @@
+connect
+/subsystem=resource-adapters/resource-adapter=file/connection-definitions=ExcelDS:add(jndi-name=java:/ExcelDS, class-name=org.teiid.resource.adapter.file.FileManagedConnectionFactory, enabled=true, use-java-context=true)
+/subsystem=resource-adapters/resource-adapter=file/connection-definitions=ExcelDS/config-properties=ParentDirectory:add(value=/home/mechevar/git/jdv-security)
+/subsystem=resource-adapters/resource-adapter=file:activate
+/:reload
+\q

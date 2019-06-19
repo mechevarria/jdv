@@ -1,0 +1,3 @@
+/subsystem=datasources/jdbc-driver=impala:remove
+/:reload
+\q

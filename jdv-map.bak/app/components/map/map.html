@@ -1,0 +1,173 @@
+<div class="row row-cards-pf">
+    <div class="col-sm-3">
+        <div class="card-pf card-pf-accented">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Map of {{ $ctrl.totalItems }} Items
+                    <div class="pull-right">
+                        <button type="button" class="btn btn-primary" ng-click="$ctrl.$onInit()">
+                            <span class="fa fa-refresh"></span>&nbsp;&nbsp;Reload
+                        </button>
+                    </div>
+                </h4>
+            </div>
+            <div class="card-pf-body">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-class="{active : activeId === marker.id}" ng-repeat="marker in $ctrl.markers">
+                        <a href ng-click="$ctrl.focus(marker)">{{ marker.title }}</a>
+                    </li>
+                </ul>
+                <ul uib-pager total-items="$ctrl.totalItems" ng-model="$ctrl.currentPage" ng-change="$ctrl.loadData()"
+                    items-per-page="$ctrl.pageSize"></ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-9">
+        <div class="card-pf card-pf-accented">
+            <div class="card-pf-body">
+                <leaflet lf-center="$ctrl.center" geojson="$ctrl.geoJson" markers="$ctrl.markers" height="420px"
+                         width="100%"></leaflet>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="row row-cards-pf" ng-if="$ctrl.details">
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Database</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('id')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('id')}">
+                    <strong>ID</strong> : {{$ctrl.details.id}}
+                </div>
+                <div ng-click="$ctrl.highlight('name')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('name')}">
+                    <strong>Name</strong> : {{$ctrl.details.title}}
+                </div>
+                <div ng-click="$ctrl.highlight('state')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('state')}">
+                    <strong>State</strong> : {{$ctrl.details.state}}
+                </div>
+                <div>
+                    <strong>Rating</strong> : {{$ctrl.details.rating}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Rest Service</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('id')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('id')}">
+                    <strong>ID</strong> : {{$ctrl.details.id}}
+                </div>
+                <div>
+                    <strong>Title</strong> : {{$ctrl.details.restTitle}}
+                </div>
+                <div>
+                    <strong>Body</strong> : {{$ctrl.details.restBody}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Amazon S3</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('id')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('id')}">
+                    <strong>ID</strong> : {{$ctrl.details.id}}
+                </div>
+                <div>
+                    <strong>Org</strong> : {{$ctrl.details.org}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">KML</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('name')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('name')}">
+                    <strong>Name</strong> : {{$ctrl.details.title}}
+                </div>
+                <div>
+                    <strong>Latitude</strong> : {{$ctrl.details.lat}}
+                </div>
+                <div>
+                    <strong>Longitude</strong> : {{$ctrl.details.lng}}
+                </div>
+                <div>
+                    <strong>Description</strong> : {{$ctrl.details.message}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Mongo - NoSQL</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('state')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('state')}">
+                    <strong>State</strong> : {{$ctrl.details.state}}
+                </div>
+                <div>
+                    <strong>GeoID</strong> : {{$ctrl.details.feature.properties.GEO_ID }}
+                </div>
+                <div>
+                    <strong>GeoType</strong> : {{$ctrl.details.geoType}}
+                </div>
+                <div>
+                    <strong>Type</strong> : {{$ctrl.details.type}}
+                </div>
+                <div>
+                    <strong>Census Area</strong> : {{$ctrl.details.feature.properties.CENSUSAREA}}
+                </div>
+                <div>
+                    <strong>Coordinates</strong> : {{ $ctrl.details.feature.geometry.coordinates | json | limitTo:600 }}
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <div class="card-pf">
+            <div class="card-pf-heading">
+                <h4 class="card-pf-title">Solr</h4>
+            </div>
+            <div class="card-pf-body">
+                <div ng-click="$ctrl.highlight('state')"
+                     class="app-link"
+                     ng-class="{ 'app-highlight': $ctrl.isHighlight('state')}">
+                    <strong>State</strong> : {{$ctrl.details.state}}
+                </div>
+                <div>
+                    <strong>Solr ID</strong> : {{$ctrl.details.sid}}
+                </div>
+                <div>
+                    <strong>State Abbreviation</strong> : {{$ctrl.details.abbreviation}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
